@@ -3,13 +3,10 @@ animals = {"sugar glider"=>"Australia","aye-aye"=> "Madagascar","red-footed tort
 
 class Hash
   def keys_of(*args)
-    puts "self: #{self}"
-    puts "args: #{args}"
     array = []
     args.each do |argument|
-      puts "argument: #{argument}"
       self.each do |animal, location|
-        if argument == animal
+        if argument == location
           array << animal
         end 
       end 
