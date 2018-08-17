@@ -1,6 +1,12 @@
 class Hash
   def keys_of(*args)
     array = []
-    return self
+    args.each do |argument|
+      self.each do |animal, location|
+        if argument == animal
+          array << animal
+      end 
+    end 
+    array
   end
 end
