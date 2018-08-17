@@ -5,6 +5,7 @@ class Hash
       self.each do |animal, location|
         if argument == animal
           array << animal
+        end 
       end 
     end 
     array
